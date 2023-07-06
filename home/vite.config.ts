@@ -12,6 +12,7 @@ export default defineConfig({
       filename: "homePage.js",
       exposes: {
         "./HeaderComponent": "./src/components/HeaderComponent",
+        "./FooterComponent": "./src/components/FooterComponent",
       },
       shared: ["react", "react-dom"],
     }),
