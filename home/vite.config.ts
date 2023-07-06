@@ -17,7 +17,14 @@ export default defineConfig({
     }),
     tsconfigPaths(),
   ],
-
+  preview: {
+    host: "localhost",
+    port: 5000,
+    strictPort: true,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
+  },
   build: {
     target: "esnext",
     minify: false,
