@@ -3,3 +3,9 @@ declare module "home/HeaderComponent" {
 
   export default Header;
 }
+
+declare module "home/FooterComponent" {
+  const Footer: React.ComponentType;
+
+  export default Footer;
+}

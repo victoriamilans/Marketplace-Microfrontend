@@ -5,6 +5,7 @@ import RegisterProductFormComponent from "./components/RegisterProductFormCompon
 import React from "react";
 
 const HeaderComponent = React.lazy(() => import("home/HeaderComponent"));
+const FooterComponent = React.lazy(() => import("home/FooterComponent"));
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <HeaderComponent />
       <ToastContainer></ToastContainer>
       <RegisterProductFormComponent />
+      <FooterComponent />
     </>
   );
 }

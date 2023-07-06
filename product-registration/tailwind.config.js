@@ -15,6 +15,9 @@ export default {
         primary: "#FF9A11",
         hover: "#E48403",
       }),
+      maxWidth: {
+        xs: "15rem",
+      },
     },
   },
   plugins: [],
