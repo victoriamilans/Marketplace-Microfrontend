@@ -53,35 +53,3 @@ const ItemCard: React.FC<Item> = (item) => {
 
 export default ItemCard;
 
-
-// interface Item {
-//     name: string;
-//     price: number;
-//     image: string;
-//     category: string;
-// }
-
-// const ItemCard = (item: Item) => {
-//     const addToList = () =>{
-//         const list = localStorage.getItem("list") || [];
-
-//         const filtered = list.filter((oldItem) => oldItem.name === item.name);
-//         filtered[0] ? (list[list.indexOf(filtered[0])].qtd += 1) : list.push({... item, qtd: 1});
-
-//         localStorage.setItem("cart", list)
-//     }
-
-//     return (
-//             <article className="w-1/4 p-4 flex flex-wrap justify-around">
-//                 <div className="bg-white shadow-md shadow-gray-400 p-5">
-//                     <img src={item.image} alt="Imagem do produto" className="w-full mb-4" />
-//                     <h3 className="text-lg font-semibold">{item.name}</h3>
-//                     <p className="text-gray-500">{item.category}</p>
-//                     <p className="text-lg mt-2 font-semibold">{item.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</p>
-//                     <button onClick={ItemCard} className="w-full bg-[#FF9A11] text-white text-lg font-semibold px-4 py-2 mt-4 rounded ">Adicionar à lista</button>
-//                 </div>
-//             </article>
-//     )
-// }
-
-// export default ItemCard
