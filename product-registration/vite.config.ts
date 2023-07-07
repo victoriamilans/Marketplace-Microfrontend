@@ -12,7 +12,7 @@ export default defineConfig({
       filename: "registerProduct.js",
       exposes: {},
       remotes: {
-        home: "http://localhost:5000/assets/homePage.js",
+        home: "http://localhost:5001/assets/homePage.js",
       },
 
       shared: ["react", "react-dom"],
@@ -21,7 +21,7 @@ export default defineConfig({
   ],
   preview: {
     host: "localhost",
-    port: 5002,
+    port: 5003,
     strictPort: true,
     headers: {
       "Access-Control-Allow-Origin": "*",
