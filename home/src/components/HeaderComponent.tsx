@@ -45,9 +45,9 @@ const HeaderComponent = () => {
             <div className="hidden sm:ml-6 sm:flex  items-center">
               <div className="flex space-x-4">
                 <a
-                  href="http://localhost:5000/"
+                  href="http://localhost:5001/"
                   className={`text-center ${
-                    url === "http://localhost:5000/"
+                    url === "http://localhost:5001/"
                       ? "text-primary"
                       : "text-gray-900"
                   } hover:text-primary-hover rounded-md px-3 py-2 text-lg font-medium`}
@@ -55,9 +55,9 @@ const HeaderComponent = () => {
                   Início
                 </a>
                 <a
-                  href="http://localhost:5001/"
+                  href="http://localhost:5002/"
                   className={`text-center ${
-                    url === "http://localhost:5001/"
+                    url === "http://localhost:5002/"
                       ? "text-primary"
                       : "text-gray-900"
                   }  hover:text-primary-hover rounded-md px-3 py-2 text-lg font-medium`}
@@ -65,9 +65,9 @@ const HeaderComponent = () => {
                   Lista de Produtos
                 </a>
                 <a
-                  href="http://localhost:5002/"
+                  href="http://localhost:5003/"
                   className={`text-center ${
-                    url === "http://localhost:5002/"
+                    url === "http://localhost:5003/"
                       ? "text-primary"
                       : "text-gray-900"
                   }  hover:text-primary-hover rounded-md px-3 py-2 text-lg font-medium`}
@@ -84,9 +84,9 @@ const HeaderComponent = () => {
         <div className="sm:hidden" id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2 flex flex-col border-solid border-t-2">
             <a
-              href="http://localhost:5000/"
+              href="http://localhost:5001/"
               className={`${
-                url === "http://localhost:5000/"
+                url === "http://localhost:5001/"
                   ? "text-primary"
                   : "text-gray-900"
               } hover:text-primary-hover rounded-md px-3 py-2 text-lg font-medium`}
@@ -95,9 +95,9 @@ const HeaderComponent = () => {
               Início
             </a>
             <a
-              href="http://localhost:5001/"
+              href="http://localhost:5002/"
               className={`${
-                url === "http://localhost:5001/"
+                url === "http://localhost:5002/"
                   ? "text-primary"
                   : "text-gray-900"
               }  hover:text-primary-hover rounded-md px-3 py-2 text-lg font-medium`}
@@ -105,9 +105,9 @@ const HeaderComponent = () => {
               Lista de Produtos
             </a>
             <a
-              href="http://localhost:5002/"
+              href="http://localhost:5003/"
               className={`${
-                url === "http://localhost:5002/"
+                url === "http://localhost:5003/"
                   ? "text-primary"
                   : "text-gray-900"
               }  hover:text-primary-hover rounded-md px-3 py-2 text-lg font-medium`}
