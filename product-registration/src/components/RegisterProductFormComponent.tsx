@@ -36,6 +36,7 @@ const RegisterProductFormComponent = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<IProduct>({ resolver: yupResolver(productSchema) });
 
   async function handleRegisterProduct(product: IProduct) {
@@ -44,8 +45,9 @@ const RegisterProductFormComponent = () => {
       toast.success("Produto cadastrado!", {
         autoClose: 1000,
       });
+      reset();
     } catch (error) {
-      toast.error("Falha ao cadastrar tecnologia, verifique as informações", {
+      toast.error("Falha ao cadastrar o produto, verifique as informações", {
         autoClose: 1000,
       });
     }
@@ -75,6 +77,7 @@ const RegisterProductFormComponent = () => {
         <input
           placeholder="R$ 5,99"
           type="number"
+          step="0.01"
           className="border-solid border border-#D2D2D2 w-full rounded-md h-12 p-5 "
           {...register("price")}
         />
