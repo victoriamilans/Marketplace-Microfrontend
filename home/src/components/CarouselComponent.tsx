@@ -18,7 +18,7 @@ const CarouselComponent = () => {
     {
       img: img03,
       message:
-        "Visite a nossa sessão de Hotfrut e desfrute de uma variedade de frutas frescas e saborosas.",
+        "Visite a nossa sessão de hortifruti e desfrute de uma variedade de frutas frescas e saborosas.",
     },
     {
       img: img04,
@@ -74,7 +74,7 @@ const CarouselComponent = () => {
             />
           </svg>
         </button>
-        <h1 className="text-shadow-black min-h-[18%] p-3 font-black text-white text-4xl bg-black/20 text-center absolute bottom-0 rounded-lg rounded-t-none w-full font-mono">
+        <h1 className="text-shadow-black min-h-[18%] p-3 font-black text-white text-3xl sm:text-[2.5rem] bg-black/20 text-center absolute bottom-0 rounded-lg rounded-t-none w-full font-mono">
           {slides[currentIndex].message}
         </h1>
 
