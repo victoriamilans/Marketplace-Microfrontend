@@ -1,13 +1,12 @@
 import FooterComponent from "./components/FooterComponent";
 import HeaderComponent from "./components/HeaderComponent";
+import MainComponent from "./components/MainComponent";
 
 function App() {
   return (
     <>
       <HeaderComponent />
-      <div className="h-96"></div>
-      <div className="h-96"></div>
-      <div className="h-96"></div>
+      <MainComponent />
       <FooterComponent />
     </>
   );

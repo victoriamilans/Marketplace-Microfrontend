@@ -3,13 +3,13 @@ import logo from "../assets/logo.svg";
 
 const HeaderComponent = () => {
   const url: string = window.location.href;
-  const [ismenuMobileOpen, setIsMenuMobileOpen] = useState(false);
+  const [isMenuMobileOpen, setIsMenuMobileOpen] = useState<boolean>(false);
   const toggleMenuMobile = () => {
-    setIsMenuMobileOpen(!ismenuMobileOpen);
+    setIsMenuMobileOpen(!isMenuMobileOpen);
   };
 
   return (
-    <nav className="bg-white shadow-lg fixad fixed top-0 left-0 right-0">
+    <nav className="bg-white shadow-lg fixad fixed top-0 left-0 right-0 z-20">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-24 items-center justify-between">
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
@@ -79,9 +79,8 @@ const HeaderComponent = () => {
           </div>
         </div>
       </div>
-
       {/* Menu mobile */}
-      {ismenuMobileOpen && (
+      {isMenuMobileOpen && (
         <div className="sm:hidden" id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2 flex flex-col border-solid border-t-2">
             <a
