@@ -1,5 +1,4 @@
 import { useState } from "react";
-import logo from "../assets/logo.svg";
 
 const HeaderComponent = () => {
   const url: string = window.location.href;
@@ -14,7 +13,11 @@ const HeaderComponent = () => {
         <div className="relative flex h-24 items-center justify-between">
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <img className=" h-auto w-auto " src={logo} alt="logo" />
+              <img
+                className=" h-20 w-auto "
+                src="https://i.imgur.com/9QMUlOm.png"
+                alt="logo"
+              />
             </div>
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
               <button
