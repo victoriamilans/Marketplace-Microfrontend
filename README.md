@@ -18,6 +18,7 @@ Essa aplicação utiliza uma API com um CRUD básico para gestão de um marketpl
 - Mongoose
 - Express
 - MongodB - Atlas
+- Yup
 
 ## ✨ Instalação
 
