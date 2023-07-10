@@ -1,7 +1,7 @@
-import img02 from "../assets/alface.webp";
-import img03 from "../assets/apple.jpg";
-import img04 from "../assets/mercado.jpg";
-import img05 from "../assets/entrega.jpg";
+import carrinho from "../assets/cart.jpg";
+import apple from "../assets/apple.jpg";
+import supermarket from "../assets/market.jpg";
+import fruits from "../assets/fruits.jpg";
 import { useEffect, useState } from "react";
 
 interface ISlide {
@@ -11,22 +11,21 @@ interface ISlide {
 const CarouselComponent = () => {
   const slides: ISlide[] = [
     {
-      img: img02,
+      img: carrinho,
+      message: "Planeje suas compras e economize",
+    },
+    {
+      img: apple,
       message:
-        "Descubra uma seleção exclusiva de produtos frescos e de qualidade, cuidadosamente selecionados para você.",
+        "Cadastre os produtos que fazem parte da lista de compras do seu dia a dia",
     },
     {
-      img: img03,
-      message:
-        "Visite a nossa sessão de hortifruti e desfrute de uma variedade de frutas frescas e saborosas.",
+      img: supermarket,
+      message: "Torne suas compras mais rápidas e objetivas",
     },
     {
-      img: img04,
-      message: "Aqui você encontra produtos de excelente qualidade.",
-    },
-    {
-      img: img05,
-      message: "Entregamos os produtos diretamente na sua casa.",
+      img: fruits,
+      message: "Planeje, economize, compre! A sua lista de compras perfeita.",
     },
   ];
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -53,7 +52,7 @@ const CarouselComponent = () => {
   }, [currentIndex]);
 
   return (
-    <div className="max-w-[1400px] h-[600px] w-full my-24 mx-auto py-16 px-4 relative group rounded-lg bg-primary">
+    <div className="w-11/12 h-[650px] my-24 mx-auto py-4 px-1 relative group rounded-lg bg-primary">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].img})` }}
         className="w-[90%] h-[100%] m-auto rounded-2x1 bg-center bg-cover duration-500 rounded-lg relative"
