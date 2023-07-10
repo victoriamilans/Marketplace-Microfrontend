@@ -29,10 +29,16 @@ const ItemCard: React.FC<Item> = (item) => {
   };
 
   return (
-    <article className="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 p-4 flex flex-wrap justify-around">
-      <div className="bg-white shadow-md shadow-gray-400 p-5">
-        <img src={item.image} alt="Imagem do produto" className="w-full mb-4" />
-        <h3 className="text-lg font-semibold">{item.name}</h3>
+    <article className="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 p-4 flex flex-wrap justify-around ">
+      <div className="bg-white shadow-md shadow-gray-400 p-5 min-w-[200px] max-w-[289px]">
+        <div className="min-w-[200px] min-h-[200px] flex flex-col">
+          <img
+            src={item.image}
+            alt="Imagem do produto"
+            className="w-full mb-4 max-w-[200px] min-w-[150px] max-w-[150px] self-center justify-self-center"
+          />
+        </div>
+        <h3 className="text-lg font-semibold truncate">{item.name}</h3>
         <p className="text-gray-500">{item.category}</p>
         <p className="text-lg mt-2 font-semibold">
           {item.price.toLocaleString("pt-BR", {
