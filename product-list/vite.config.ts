@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "products",
+      name: "productsList",
       remotes: {
         homepage: "http://localhost:5001/assets/homePage.js",
       },

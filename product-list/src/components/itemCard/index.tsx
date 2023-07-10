@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react";
 
 interface Item {
   name: string;
@@ -14,18 +14,18 @@ interface CartItem extends Item {
 
 const ItemCard: React.FC<Item> = (item) => {
   const addToList = () => {
-    const list: CartItem[] = JSON.parse(localStorage.getItem('list') || '[]');
+    const list: CartItem[] = JSON.parse(localStorage.getItem("list") || "[]");
 
     const filtered = list.find((oldItem) => oldItem.name === item.name);
-    if(filtered){
-        filtered.qtd += 1;
-        filtered.total = filtered.qtd * filtered.price;
-    }else{
-        const newItem: CartItem = { ...item, qtd: 1, total: item.price};
-        list.push(newItem)
+    if (filtered) {
+      filtered.qtd += 1;
+      filtered.total = filtered.qtd * filtered.price;
+    } else {
+      const newItem: CartItem = { ...item, qtd: 1, total: item.price };
+      list.push(newItem);
     }
 
-    localStorage.setItem('list', JSON.stringify(list));
+    localStorage.setItem("list", JSON.stringify(list));
   };
 
   return (
@@ -35,13 +35,13 @@ const ItemCard: React.FC<Item> = (item) => {
         <h3 className="text-lg font-semibold">{item.name}</h3>
         <p className="text-gray-500">{item.category}</p>
         <p className="text-lg mt-2 font-semibold">
-          {item.price.toLocaleString('pt-BR', {
-            style: 'currency',
-            currency: 'BRL',
+          {item.price.toLocaleString("pt-BR", {
+            style: "currency",
+            currency: "BRL",
           })}
         </p>
         <button
-          onClick={addToList}
+          onClick={() => addToList()}
           className="w-full bg-[#E48403] text-white text-lg font-semibold px-4 py-2 mt-4 rounded"
         >
           Adicionar à lista
@@ -52,4 +52,3 @@ const ItemCard: React.FC<Item> = (item) => {
 };
 
 export default ItemCard;
-
