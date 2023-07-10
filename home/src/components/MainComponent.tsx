@@ -5,7 +5,7 @@ const MainComponent = () => {
   return (
     <main className="mt-32 px-3">
       <img className="m-auto h-auto" src={img01} alt="banner" />
-      <CarouselComponent />
+      {/* <CarouselComponent /> */}
     </main>
   );
 };

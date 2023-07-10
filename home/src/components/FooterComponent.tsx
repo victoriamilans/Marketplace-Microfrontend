@@ -4,7 +4,7 @@ const FooterComponent = () => {
   };
 
   return (
-    <footer className="shadow-inner h-24  p-8 flex justify-between bg-white items-center border-solid border-b-2 border-primary">
+    <footer className="shadow-inner h-24  p-8 flex justify-between bg-white items-center border-solid border-t-2 border-primary2 absolute bottom-0.5 right-0 left-0">
       <button
         type="button"
         className="inline-flex items-center justify-center rounded-md p-2 text-white bg-primary w-12 h-12 hover:bg-primary-hover"
